@@ -114,6 +114,76 @@ mongoose
 day7 or day8
 ==================
 
+Database
+==========
+
+      RDBMS : (ACID)
+         MySQL,Oracle,DB2,Maria DB, SQL Server ,Postegrey
+      
+      NOSQL-(Not Only SQL)   CAP  Theorem
+      
+      C -Consistency
+                Weak
+                Strong
+                Eventual 
+      
+      A - Availabilty
+      
+      P -Partition tolerance
+      
+      
+      CP => MongoDB ,Hbase
+      
+      AP => Apache Casendra 
+      
+NOSQL Database Models
+=======================
+NOSQL Databse models
+======================
+1.Key value         
+
+2.column family     :Hbase ,Casendra  =>cf:cq:value
+
+1 Table             : N Column Family
+1 Column  Family    : N Column qualifiers
+1 Column qualifier : 1 Value
+
+      Table employee
+      ==============
+       id    name     salary   flatNo   bldName area       city  
+       101   pradeep  1000     101      A4      shivane    Pune
+
+Column Family     
+                   employee_personal_info
+                    
+Column qualifier  :id    name     salary
+Column Value       101   pradeep  1000     
+ 
+
+Column Family     
+                   employee_address
+
+Column qualifier  :flatNo   bldName    area       city  
+Column Value        101      A4       Shivane      Pune   
+
+3.document oriented :MongoDB        
+
+   {id:101,name:'Pradeep Chinchole',salary:12000}
+
+4.graph storage     : Neo4j
+
+
+
+
+      
+  
+
+
+
+
+
+
+
 
 
 
@@ -235,7 +305,7 @@ Angular Binding types
 
 1. Interpolation   
 
-       Interpolation use the {{ expression }} to render the bound value to the component’s template.
+       Interpolation use the {{ expression }} to render the bound value to the componentâ€™s template.
 
 2.Property Binding
 
