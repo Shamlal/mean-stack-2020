@@ -518,6 +518,8 @@ Structural Directive :Will change the HTML DOM structure
 Component Directive
 ==================
 <app-root>  </app-root>
+<router-outlet></router-outlet>
+<ng-template></ng-template>
 
 
 
