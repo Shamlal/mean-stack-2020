@@ -505,7 +505,7 @@ Attribute Directve    :Won't change the HTML DOM structure
 ====================== 
  [ngStyle]
  [ngClass]
- [ngModel] =>It is applicable for only input elements
+ [ngModel] =>It is applicable for only input elements ,need to import FormsModule from @angular/forms
  [ngSwitch]
 
 Structural Directive :Will change the HTML DOM structure
