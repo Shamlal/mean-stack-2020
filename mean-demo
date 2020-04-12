@@ -438,27 +438,42 @@ Component is responsible for 4 things
  4.Where to inject?
 
 
+Angular Routing
+===============
+
+/basics            component : AngularBasicsComponent
+/pipes             component : AngularPipesComponent
+/home              component : HomeComponent
+/technologies      component : TechnologiesComponent
+/**                component : HomeComponentt
+
+
 Angular Binding types
 
 1. Interpolation   
 
        Interpolation use the {{ expression }} to render the bound value to the component’s template.
+       
+       <input type="number"   min="{{min}}">
+       
 
 2.Property Binding
 
        Property binding user [] to send values from the component  to the template.
+       <input type="number"   [min]="min">
+         
 
 3.Event Binding
 
-         (click)="showHide()"
+   <input type="button"  (click)="showHide()" />
 
 4.One way data binding
          
-           [ngModel]="name"
+       <input type="text"  [ngModel]="name" />
 
 4.Two way data binding
          
-           [(ngModel)]="name"
+       <input type="text"  [(ngModel)]="name" />
      
 
 
@@ -524,13 +539,26 @@ Structural Directive    :TemplateRef  and VieContainerRef
 
 
 
-
-
-
-
-
 Day2  :
 ======
+
+
+technologies=[
+{id:101,name:'Angular',likes:0,dislikes:0},
+{id:102,name:'React',likes:0,dislikes:0},
+{id:103,name:'AWS Basics',likes:0,dislikes:0},
+{id:104,name:'Spring',likes:0,dislikes:0},
+{id:105,name:'Micro Service',likes:0,dislikes:0},
+];
+
+
+
+
+
+
+
+
+
 employees=[
     {id:12,name:'Ram chinchole',salary:2345500,variable:0.15,
     city:'Pune',mobile:'8149976894',pan:'cmxac9845d',
@@ -575,7 +603,7 @@ Angular Pipes are used to format ,sort search (filter) the data.
 
 
 
-Angular Buitlin Pipes
+Angular Buitlin Pipes  (11 Pipes)
 ======================
 
 String
@@ -596,7 +624,7 @@ number
 ======
 number     salary|number:'9.3-4'   
 currency   salary|currency:'Rs'
-percent   salary|percent
+percent    salary|percent
 
 date
 =====
@@ -608,13 +636,27 @@ dob|date:'longDate'
 dob|date:'fullDate'
 dob|date:'dd-MM-yyyy'
 
-Object
-======
-object|json
+dob|date:'shortTime'
+dob|date:'mediumTime'
+dob|date:'longTime'
+dob|date:'fullTime'
+dob|date:'hh:mm:ss'
+
+dob|date:'short'
+dob|date:'medium'
+dob|date:'long'
+dob|date:'full'
+dob|date:'dd-MMM-yyyy,hh:mm:ss'
+
+JSON Object
+===========
+json             object|json
+keyvalue         object|keyvalue
 
 Observable
 ===========
 async
+
 
 
 Angular Custom Pipes
